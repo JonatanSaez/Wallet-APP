@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bakbak One', cursiva;
+    
+}
+
+body {
+    background-color: #040F58;
+    
+}
+.contenedorControles {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem; 
+
+
+}
+
+#circulo{ 
+    color: #0AFF96;
+    font-size: 2rem;
+    stroke: #0AFF96;
+    position: relative;
+}
+
+#campana {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+span{
+    color: #FFFFFF;
+}
+.imagenPersona{
+    width: 1.5rem;
+    position: absolute;
+    border-radius: 50%;
+    padding-left:0.3rem;
+    padding-top: 0.6rem;
+}
+.saldo { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span{
+    padding:1.5rem;
+}
+
+.inputSaldo{
+    width:10rem;
+    height:3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: transparent;
+
+}
+
+.inputSaldo::placeholder{
+    color: #FFFFFF;
+    font-size: 2rem;
+    text-align: center;
+    opacity:0.5;
+    
+}
+
+.btnAgregar{
+    margin: 1.5rem;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+.btnAgregar>i {
+    font-size: 2rem;
+    color: #0AFF96;
+}
+.gastos{
+    border: 4px ridge #0AFF96;
+    border-radius: 30px;
+    max-width: 70vw;
+    height: 40vh;
+    margin-left: 15vw;
+    text-align: center;
+    
+}
+.ingreseGasto{
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    background-color:transparent;
+}
+.ingreseGasto::placeholder{
+    color: #FFFFFF;
+    opacity:0.5;
+    font-size: 1rem
+}
+.ingreseMonto {
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+    background-color:transparent;
+    text-align: center;
+}
+.ingreseMonto::placeholder{
+    color: #FFFFFF;
+    opacity:0.5;
+    font-size: 1rem
+}
