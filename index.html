@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/68f45048a9.js"
-     crossorigin="anonymous"></script>
-     <script src="https://kit.fontawesome.com/68f45048a9.js" crossorigin="anonymous"></script>
-     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/68f45048a9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68f45048a9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
     <title>Mi Billetera Virtual</title>
 </head>
+
 <body>
     <div class="contenedorControles">
         <div class="controles">
@@ -19,7 +22,7 @@
             <span>Mi Wallet</span>
         </div>
         <div class="controles1">
-            <i id="campana"class="bi bi-bell-fill"></i>
+            <i id="campana" class="bi bi-bell-fill"></i>
         </div>
     </div>
     <div class="saldo">
@@ -29,15 +32,21 @@
     </div>
     <div class="gastos">
         <span>Gastos</span>
-        <input type="text" class="ingreseGasto" placeholder="Item">
-        <input type="number" class="ingreseMonto" placeholder="Monto">
-        <ul class="itemsIngresados">
+        <input type="text" class="ingreseGasto" placeholder="Item" id="txtItem">
+        <input type="number" class="ingreseMonto" placeholder="Monto" id="nbMonto">
+        <button class="btnAgregar "onClick="onClick()"><i class="bi bi-plus-circle-fill"></i></button>
+        <table id="tabla">
+            <thead></thead>
+            <tbody id="tablaBody">
+            </tbody>
+        </table>
+        <!--<ul class="itemsIngresados">
+             <li><button class="borrarItem"><i class="bi bi-trash-fill"></i></button></li>
             <li><button class="borrarItem"><i class="bi bi-trash-fill"></i></button></li>
             <li><button class="borrarItem"><i class="bi bi-trash-fill"></i></button></li>
-            <li><button class="borrarItem"><i class="bi bi-trash-fill"></i></button></li>
-            <li><button class="borrarItem"><i class="bi bi-trash-fill"></i></button></li>
+            <li><button class="borrarItem"><i class="bi bi-trash-fill"></i></button></li> 
 
-        </ul>
+        </ul>-->
     </div>
     <!-- <div class="disponibles">
         <div class="dineroDisponible">
@@ -54,8 +63,9 @@
         </div>
     </div> -->
     <div class="listaItems">
-        
+
     </div>
     <script src="./app.js"></script>
 </body>
+
 </html>
